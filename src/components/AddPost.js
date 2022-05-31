@@ -8,6 +8,7 @@ const AddPost = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("raj");
     try {
       setIsUploading(true);
       const PostImage = e.target.elements.PostImage.value;
@@ -28,11 +29,9 @@ const AddPost = () => {
         formData.append("PostImage", file);
         formData.append("date", date);
 
-        const response = await fetch("https://cool-rolypoly-e4cfb9.netlify.app/add/post", {
+        const response = await fetch("https://instaclone-reactapp.herokuapp.com/add/post", {
           method: "POST",
-          headers: {
-            'Access-Control-Allow-Origin':'*'
-          },
+          headers: {},
           body: formData,
         })
 
@@ -81,6 +80,7 @@ const AddPost = () => {
             <div
               style={{
                 position: "absolute",
+                top:"10px",
                 color: "green",
                 fontSize: "1.7rem",
               }}
