@@ -22,7 +22,7 @@ const LandingPage = () => {
       <div className="container">
         {users.length
           ? users.map((obj, idx) => {
-              return <Card key={"vamsi" + idx} obj={obj} />;
+              return <Card key={"Sriram" + idx} obj={obj} />;
             })
           : ""}
       </div>

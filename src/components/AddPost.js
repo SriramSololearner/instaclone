@@ -28,9 +28,11 @@ const AddPost = () => {
         formData.append("PostImage", file);
         formData.append("date", date);
 
-        const response = await fetch("https://instaclone-reactapp.herokuapp.com/add/post", {
+        const response = await fetch("https://cool-rolypoly-e4cfb9.netlify.app/add/post", {
           method: "POST",
-          headers: {},
+          headers: {
+            'Access-Control-Allow-Origin':'*'
+          },
           body: formData,
         })
 

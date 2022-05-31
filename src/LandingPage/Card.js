@@ -16,7 +16,7 @@ export default function Card({ obj }) {
 
       <div style={{ width: "100%", height: "60%" }}>
         <img
-          src={ "https://instaclone-reactapp.herokuapp.com/image/" + PostImage}
+          src={ "https://cool-rolypoly-e4cfb9.netlify.app/image/" + PostImage}
           alt="img"
           className="post-img"
         />
