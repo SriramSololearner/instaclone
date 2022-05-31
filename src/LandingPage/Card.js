@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Card({ obj }) {
   // console.log(obj);
-  const { name, location, likes, description, PostImage, date } = obj;
+  const { name, location, likes, description, PostImage, createdAt } = obj;
 
   return (
     <div className="card">
@@ -29,8 +29,8 @@ export default function Card({ obj }) {
             <img style={{width:"20px" , height:"20px"}}src={'https://cdn-icons-png.flaticon.com/128/2526/2526496.png'} alt="shareImg" />
           </span>
         </div>
-        <div className="date">{date}</div>
-      </div>
+        <div className="date">{createdAt.split("T")[0].split("-").join("/")}</div>
+      </div> 
 
       <div className="like-content">
         <p style={{ fontWeight: "bold" }}>{likes} likes</p>
