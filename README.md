@@ -1,4 +1,4 @@
-https://react-instaclone.herokuapp.com/
+https://react-instaclone.herokuapp.com
 
 
 # Getting Started with Create React App
