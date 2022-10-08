@@ -1,4 +1,9 @@
-https://react-instaclone.herokuapp.com
+
+Follow this link:
+
+https://react-instaclone.herokuapp.com/
+
+
 
 
 # Getting Started with Create React App
